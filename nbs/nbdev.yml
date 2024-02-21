@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbdev_mkdocs_tutorial_2024"
+  site-url: "https://harishmohanraj.github.io/nbdev_mkdocs_tutorial_2024"
+  description: "nbdev_mkdocs_tutorial_2024"
+  repo-branch: main
+  repo-url: "https://github.com/harishmohanraj/nbdev_mkdocs_tutorial_2024"
