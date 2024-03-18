@@ -20,6 +20,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Fetch main branch
+        run: git fetch origin main --depth=1
+
+      - name: Checkout main branch
+        run: git checkout main
+
+      - name: Copy maintenance.html from main branch
+        run: cp maintenance.html .
+
       - name: Switch to gh-pages branch
         run: |
           git fetch origin gh-pages --depth=1
