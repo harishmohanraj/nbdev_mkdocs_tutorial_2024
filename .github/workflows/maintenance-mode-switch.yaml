@@ -3,7 +3,8 @@ name: Switch Maintenance Mode
 on:
   workflow_dispatch:
     inputs:
-      mode:
+      choice:
+        type: choice
         description: 'Switch mode: maintenance or working'
         required: true
         default: 'working'
