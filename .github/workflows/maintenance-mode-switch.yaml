@@ -20,6 +20,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Switch to gh-pages branch
+        run: git checkout gh-pages
+
       - name: Prepare for mode switch
         run: |
           if [ "${{ github.event.inputs.choice }}" == "maintenance" ]; then
