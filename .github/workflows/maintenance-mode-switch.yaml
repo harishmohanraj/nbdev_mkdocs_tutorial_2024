@@ -21,10 +21,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Fetch main branch
-        run: git fetch origin main --depth=1
+        run: git fetch origin master --depth=1
 
       - name: Checkout main branch
-        run: git checkout main
+        run: git checkout master
 
       - name: Copy maintenance.html from main branch
         run: cp maintenance.html .
